@@ -212,6 +212,13 @@ span.cursor:after {
     border-radius: var(--border_radius);
   }
 
+  .terminal-padding {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    min-height: 300px;
+  }
+
   .terminal-content-container {
     /* padding-left: 2em;
     padding-right: 2em;
@@ -358,5 +365,5 @@ span.cursor:after {
   }
 
   .cansat {
-    height: 1200px;
+    height: 300px;
   }

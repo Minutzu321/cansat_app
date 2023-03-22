@@ -17,7 +17,7 @@ export default function Home() {
               <div className="terminal-title-text">terminal</div>
             </div>
   
-            <div className="terminal-content-container">
+            <div className="terminal-content-container terminal-padding">
               <div className="terminal-content-text">
                 <p>
                   <span className="yellow">ub@can</span>:<span className="blue">~</span>$
