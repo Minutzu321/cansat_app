@@ -1,4 +1,6 @@
+import Grafic from '@/components/Grafic';
 import Scena from '@/components/Scena'
+import React from 'react';
 
 export default function Home() {
   return (
@@ -34,6 +36,7 @@ export default function Home() {
         </div>
       </div>
     </section>
+    <Grafic/>
     <section>
       <div className="root-page-container">
         <div className="terminal-outer-container">

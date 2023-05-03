@@ -18,11 +18,12 @@ function Box(props: any) {
       {...props}
       ref={mesh}
       scale={active ? 1.5 : 1}
+      rotation={[1,1,1]}
       onClick={(event) => setActive(!active)}
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}>
       {/* <boxGeometry args={[1, 4, 4]} /> */}
-      <circleGeometry args={[1]}/>
+      <cylinderGeometry args={[0.5, 0.5, 1]}/>
       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
     </mesh>
   )
@@ -33,7 +34,7 @@ export default function Scena() {
     <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <Box position={[0, 0, 0]} />
+        <Box position={[0, 0, 0]}/>
     </Canvas>
   )
 }
